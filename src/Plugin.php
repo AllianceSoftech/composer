@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aikeedo\Composer;
+namespace alliancesoftech.composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -88,7 +88,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
         $operation = $event->getOperation();
         $package = $this->getPackageFromOperation($operation);
 
-        if (!$package || !$this->isAikeedoPackage($package)) {
+        if (!$package || !$this->isalliancesoftechPackage($package)) {
             return;
         }
 
@@ -103,7 +103,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
         $operation = $event->getOperation();
         $package = $this->getPackageFromOperation($operation);
 
-        if (!$package || !$this->isAikeedoPackage($package)) {
+        if (!$package || !$this->isalliancesoftechPackage($package)) {
             return;
         }
 
@@ -139,12 +139,12 @@ class Plugin implements PluginInterface, EventSubscriberInterface
     }
 
     /**
-     * Check if package is an Aikeedo package
+     * Check if package is an alliancesoftech package
      */
-    private function isAikeedoPackage(PackageInterface $package): bool
+    private function isalliancesoftechPackage(PackageInterface $package): bool
     {
         $packageType = $package->getType();
-        return in_array($packageType, ['aikeedo-plugin', 'aikeedo-theme']);
+        return in_array($packageType, ['alliancesoftech-plugin', 'alliancesoftech-theme']);
     }
 
     /**
@@ -317,6 +317,6 @@ class Plugin implements PluginInterface, EventSubscriberInterface
     private function getMappingsFilePath(): string
     {
         $vendorDir = $this->composer->getConfig()->get('vendor-dir');
-        return $vendorDir . '/aikeedo-file-mappings.json';
+        return $vendorDir . '/alliancesoftech-file-mappings.json';
     }
 }

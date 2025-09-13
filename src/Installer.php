@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aikeedo\Composer;
+namespace alliancesoftech.composer;
 
 use Composer\Installer\InstallerInterface;
 use Composer\Installer\LibraryInstaller;
@@ -38,8 +38,8 @@ class Installer extends LibraryInstaller implements InstallerInterface
     public function supports(string $packageType)
     {
         $supported = [
-            'aikeedo-plugin',
-            'aikeedo-theme',
+            'alliancesoftech-plugin',
+            'alliancesoftech-theme',
         ];
 
         return in_array($packageType, $supported);
