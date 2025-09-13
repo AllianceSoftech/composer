@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace alliancesoftech.composer;
+namespace AllianceSoftech\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;

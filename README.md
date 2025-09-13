@@ -1,6 +1,6 @@
-# AllianceSoftech/composer
+# AllianceSoftech/Composer
 
-AllianceSoftech Composer plugin to register custom installer for   AllianceSoftech plugins/themese etc.
+AllianceSoftech/Composer plugin to register custom installer for   AllianceSoftech plugins/themese etc.
 
 [https://alliancesoftech.com/](https://alliancesoftech.com/)
 
@@ -9,5 +9,5 @@ AllianceSoftech Composer plugin to register custom installer for   AllianceSofte
 ## Installation
 
 ```bash
-composer require AllianceSoftech/composer
+composer require AllianceSoftech/Composer
 ```

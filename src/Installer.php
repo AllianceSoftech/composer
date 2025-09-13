@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace alliancesoftech.composer;
+namespace AllianceSoftech\Composer;
 
 use Composer\Installer\InstallerInterface;
 use Composer\Installer\LibraryInstaller;
