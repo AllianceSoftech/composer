@@ -1,6 +1,6 @@
 {
-    "name": " alliancesoftech/composer",
-    "description": " AllianceSoftech/Composer plugin to register custom installer for  AllianceSoftech plugins/themese etc.",
+    "name": "alliancesoftech/composer",
+    "description": "AllianceSoftech/Composer plugin to register custom installer for  AllianceSoftech plugins/themese etc.",
     "keywords": [
         "composer",
         "plugin",
