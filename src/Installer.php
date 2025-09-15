@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AllianceSoftech\Composer;
+namespace TheSkillPedia\Composer;
 
 use Composer\Installer\InstallerInterface;
 use Composer\Installer\LibraryInstaller;
@@ -38,8 +38,8 @@ class Installer extends LibraryInstaller implements InstallerInterface
     public function supports(string $packageType)
     {
         $supported = [
-            'alliancesoftech-plugin',
-            'alliancesoftech-theme',
+            'skillpedia-plugin',
+            'skillpedia-theme',
         ];
 
         return in_array($packageType, $supported);
