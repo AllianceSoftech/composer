@@ -1,6 +1,6 @@
 {
-    "name": "alliancesoftech/composer",
-    "description": "AllianceSoftech/Composer plugin to register custom installer for  AllianceSoftech plugins/themese etc.",
+    "name": "theskillpedia/composer",
+    "description": "TheSkillPedia Composer plugin to register custom installer for  AllianceSoftech plugins/themese etc.",
     "keywords": [
         "composer",
         "plugin",
@@ -16,7 +16,7 @@
         }
     ],
     "extra": {
-        "class": "AllianceSoftech\\Composer\\Plugin"
+        "class": "TheSkillPedia\\Composer\\Plugin"
     },
     "require": {
         "php": "^8.2",
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AllianceSoftech\\Composer\\": "src/"
+            "TheSkillPedia\\Composer\\": "src/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "AllianceSoftech\\Composer\\Tests\\": "tests/"
+            "TheSkillPedia\\Composer\\Tests\\": "tests/"
         }
     },
     "scripts": {
