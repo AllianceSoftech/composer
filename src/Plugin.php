@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AllianceSoftech\Composer;
+namespace TheSkillPedia\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
